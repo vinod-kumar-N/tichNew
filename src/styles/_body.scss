@@ -1,0 +1,26 @@
+.title-section {
+  text-align: center;
+  padding: 30px 0;
+  h1 {
+    font: 500 32px/2 $titleFont;
+  }
+  h2 {
+    font: 800 16px/2 $defaultFont;
+    width: max-content;
+    text-align: center;
+    margin: 10px auto;
+    &.rev-clr {
+      color: $white;
+    }
+    &:after {
+      display: block;
+      content: '';
+      width: 110px;
+      max-width: 75%;
+      border-bottom: 2px solid $yellow;
+    }
+  }
+  p {
+    font: 500 26px/1.5 $titleFont;
+  }
+}

@@ -1,0 +1,26 @@
+.vertical-tabs-wrapper {
+  margin-top: 15px;
+  // display: flex;
+  // box-sizing: border-box;
+  // padding: 15px;
+  // width: 100%;
+  .vertical-tabs-titles {
+    // min-width: 200px;
+    border-right: 1px solid #ffbf00;
+    ul {
+      padding: 0;
+      li {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        list-style-type: none;
+        padding: 10px 15px;
+        margin: 0 15px;
+        line-height: 1.5;
+        &.vertical-tab-title-active {
+          background: #ffbf00;
+        }
+      }
+    }
+  }
+}

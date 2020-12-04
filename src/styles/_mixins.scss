@@ -1,0 +1,11 @@
+// Social Icons for footer definition
+
+@mixin social-icon($bg-image, $icon-size) {
+  background: url('../images/'+$bg-image);
+  width: $icon-size;
+  height: $icon-size;
+  margin-right: 8px;
+  display: block;
+  background-repeat: no-repeat;
+  float: left;
+}

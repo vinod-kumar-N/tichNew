@@ -1,0 +1,58 @@
+.blue-btn {
+  background: $btnBlue;
+  border-radius: 0;
+  border-color: $btnBlue;
+  padding: 8.5px 20px;
+  font: 500 18px/1.3 $defaultFont;
+  &:enabled {
+    &:focus,
+    &:active,
+    &:hover {
+      background: darken($btnBlue, 5%);
+      box-shadow: 0 0 0 2px lighten($btnBlue, 20%) inset;
+      border-color: lighten($btnBlue, 20%);
+      transition: all 1s;
+    }
+  }
+}
+
+.white-btn {
+  background: $white;
+  border-radius: 0;
+  border-color: $formInputBorder;
+  padding: 8.5px 20px;
+  font: 500 18px/1.3 $defaultFont;
+  color: $black;
+  &:enabled {
+    &:focus,
+    &:active,
+    &:hover {
+      background: darken($white, 5%);
+      box-shadow: 0 0 0 2px lighten($formInputBorder, 10%) inset;
+      border-color: lighten($formInputBorder, 10%);
+      transition: all 1s;
+      color: $black;
+    }
+  }
+}
+
+.neutral-btn {
+  background: $white;
+  border-radius: 0;
+  border-color: $btnBlue;
+  border-width: 2px;
+  padding: 8px 20px;
+  font: 500 16px/1.3 $defaultFont;
+  color: $black;
+  &:enabled {
+    &:focus,
+    &:active,
+    &:hover {
+      background: darken($white, 5%);
+      box-shadow: 0 0 0 2px lighten($btnBlue, 10%) inset;
+      border-color: lighten($btnBlue, 10%);
+      transition: all 1s;
+      color: $black;
+    }
+  }
+}

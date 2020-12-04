@@ -1,0 +1,344 @@
+body {
+  background: $white;
+}
+* {
+  font-family: $defaultFont;
+}
+p {
+  font: 400 14px/1.5 $defaultFont;
+  color: $dark;
+  &.rev-para {
+    font: 500 16px/1.5 $defaultFont;
+    color: $white;
+    text-align: center;
+  }
+}
+h1 {
+  font: 700 24px/1.5 $defaultFont;
+  color: $dark;
+}
+h2 {
+  font: 700 22px/1.5 $defaultFont;
+  color: $dark;
+}
+h3 {
+  font: 700 20px/1.5 $defaultFont;
+  color: $dark;
+}
+h4 {
+  font: 700 18px/1.5 $defaultFont;
+  color: $dark;
+}
+h5 {
+  font: 700 16px/1.5 $defaultFont;
+  color: $dark;
+}
+h6 {
+  font: 700 14px/1.5 $defaultFont;
+  color: $dark;
+}
+.para-lite {
+  font-weight: 300;
+}
+
+.clear-pad-25 {
+  padding-top: 25px;
+}
+.view-more,
+.view-less {
+  color: $yellow;
+  font: 700 14px/1.5 $defaultFont;
+  text-decoration: underline;
+  display: inline;
+  float: right;
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($yellow, 10%);
+  }
+}
+
+// yellow Button
+//a.home-cta-btn {
+a.yellow-btn-c {
+  background: $yellow;
+  color: $black;
+  padding: 0 10px;
+  font: 500 30px/1.5 $titleFont;
+  margin-top: 20px;
+  display: inline-block;
+  &:hover {
+    text-decoration: none;
+    background: darken($yellow, 5%);
+  }
+}
+
+// Main Top
+.main-top {
+  min-height: 700px;
+  width: 100%;
+  background: url(../images/banner-main.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  .nav-wrap {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    .nav-logo {
+      width: 125px;
+      height: 125px;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+  }
+  .scrolled-nav-wrap {
+    background: rgba($brown, 0.9);
+    height: 95px;
+    .nav-logo {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+// Home CTA Container
+.main-cta-container {
+  position: relative;
+  top: 175px;
+  h1 {
+    font: 500 55px/1.5 $titleFont;
+    color: $white;
+  }
+  p em {
+    font: 700 22px/1.5 $defaultFont;
+    color: $white;
+  }
+}
+
+// Check Our Work
+.check-work {
+  background: $extraLiteGrey;
+  .check-work-container {
+    padding: 50px 15px;
+    .check-work-content {
+      width: 60%;
+      background: $white;
+      padding: 25px;
+      position: absolute;
+      bottom: 90px;
+      z-index: 99;
+      p {
+        font: 400 18px/1.5 $defaultFont;
+        color: $dark;
+        &:nth-child(2) {
+          font: 400 16px/1.75 $defaultFont;
+          margin: 14px 0 20px;
+        }
+      }
+      .work-statistics {
+        p {
+          font: 600 24px/1.35 $defaultFont;
+          span {
+            font: 500 24px/1.35 $titleFont;
+          }
+        }
+      }
+
+      a {
+        color: $white;
+        padding: 18px 20px;
+        background: $btnBlue;
+        font: 400 18px/1 $defaultFont;
+        position: absolute;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .check-work-image {
+      width: 60%;
+      float: right;
+    }
+  }
+}
+
+// featured-panel
+.featured-panel {
+  .featured-body {
+    padding: 35px 15px;
+    %featured-design {
+      width: 200px;
+      height: 125px;
+      border: 3px solid #999;
+      position: relative;
+      left: 30px;
+      margin-right: 30px;
+      p {
+        font-size: 34px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 1.2;
+        vertical-align: middle;
+        padding: 4px 0;
+        margin: 0;
+        position: absolute;
+        left: -30px;
+        top: 16px;
+        background: white;
+        color: $dark;
+        span {
+          width: 100%;
+          display: block;
+          color: $red;
+        }
+      }
+    }
+    .featured-design-lt {
+      float: left;
+      @extend %featured-design;
+    }
+    .featured-design-rt {
+      float: right;
+      @extend %featured-design;
+    }
+    %featured-content {
+      width: calc(100% - 230px);
+      height: 125px;
+      position: relative;
+      span {
+        color: $dark;
+        font: 600 120px/0.6 $defaultFont;
+      }
+      p {
+        font: 500 20px/1.5 $defaultFont;
+        color: $dark;
+        background: white;
+        padding: 5px 0 0 5px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+    .featured-content-rt {
+      float: right;
+      padding: 5px 0 5px 30px;
+      @extend %featured-content;
+    }
+    .featured-content-lt {
+      float: left;
+      padding: 5px 0 5px 0;
+      @extend %featured-content;
+      p {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+// ## Form steps top part ##
+
+.form-capstion-personal {
+  width: 100%;
+  background: $ultraLiteGrey;
+  margin: 95px 0 45px;
+  .capstion-personal-image {
+    position: relative;
+    top: 50px;
+    outline: 10px solid white;
+    outline-offset: -10px;
+    box-shadow: 1px 1px 1px rgba($black, 0.25);
+  }
+  .caption-personal-content {
+    padding-top: 100px;
+    h1 {
+      font: 800 24px/2 $defaultFont;
+      width: max-content;
+      padding-bottom: 15px;
+      &:after {
+        display: block;
+        content: '';
+        width: 110px;
+        max-width: 75%;
+        border-bottom: 2px solid $yellow;
+      }
+    }
+    h3 {
+      font: 500 24px/1.5 $titleFont;
+      padding-bottom: 15px;
+    }
+    p {
+      font: 400 14/1.5 $defaultFont;
+    }
+  }
+}
+
+// Title Wrapper std
+.title-wrap {
+  margin-top: 30px;
+}
+.address-book {
+  .table {
+    tr {
+      td {
+        border: none;
+      }
+    }
+  }
+  .section-title {
+    font: 400 14px/1.5 $defaultFont;
+  }
+  .name-section {
+    font: 700 14px/1.5 $defaultFont;
+  }
+  .address-section {
+    font: 700 14px/1.5 $defaultFont;
+    margin-bottom: 0.25rem;
+  }
+  .small-text {
+    font: 700 12px/1.5 $defaultFont;
+  }
+}
+
+.tihlc-details-container {
+  margin-bottom: 1rem;
+  background: $detailsBg;
+  .table {
+    margin-top: 1rem;
+    tr {
+      td {
+        border-top-color: $detailsBg;
+        padding: 0.5rem 0;
+        font-size: 16px;
+        color: $black;
+        &:last-child {
+          text-align: right;
+        }
+        &:first-child {
+          text-align: left;
+        }
+        span {
+          font-weight: 700;
+        }
+        a {
+          font-size: 14px;
+          text-decoration: underline;
+          color: $black;
+        }
+        &.green-text {
+          color: $green;
+        }
+        .small-text {
+          font-size: 12px;
+        }
+      }
+      h4 {
+        margin-bottom: 0;
+      }
+      &.tihlc-tbl-border {
+        td {
+          border-top-color: $disabledBg;
+        }
+      }
+    }
+  }
+}

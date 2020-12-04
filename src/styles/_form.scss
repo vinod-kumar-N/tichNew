@@ -1,0 +1,235 @@
+.cta-form-steps-wrap {
+  .form-step {
+    width: 100%;
+    height: 42px;
+    position: relative;
+    &:before {
+      content: '';
+      width: calc(100% - 40px);
+      display: block;
+      position: absolute;
+      top: calc(50% - 1px);
+      background: $black;
+      opacity: 0.5;
+      height: 2px;
+      left: 20px;
+      &:last-child {
+        display: none;
+      }
+    }
+    p {
+      background: $white;
+      opacity: 1;
+      position: absolute;
+      padding-right: 20px;
+      margin: 0;
+      font-size: 20px;
+      span {
+        padding: 10px;
+        background: $disabledBg;
+        margin-right: 20px;
+        color: $dark;
+        font-size: 22px;
+      }
+    }
+  }
+  .active-step {
+    p {
+      span {
+        background: $yellow;
+      }
+    }
+  }
+}
+
+.multi-line-label {
+  font-size: 18px;
+  line-height: 1;
+  em {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+  }
+  span {
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    line-height: 2;
+  }
+}
+
+.tihlc-std-form {
+  .col-form-label {
+    font: 600 16px/1.5 $defaultFont;
+    color: $dark;
+  }
+  .form-control {
+    border-color: $formInputBorder;
+    font: 600 16px/1.5 $defaultFont;
+    color: $dark;
+    border-radius: 0;
+  }
+  .form-row {
+    & > .col,
+    & > [class*='col-'] {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  .template-design-main-label {
+    width: 100%;
+  }
+  .template-radio {
+    position: absolute;
+    left: -9999px;
+    & + label {
+      margin-right: 0.5rem;
+      span {
+        display: block;
+        text-align: center;
+        font: 700 18px/1.5 $defaultFont;
+      }
+    }
+    & + label > img {
+      width: 75px;
+      height: 85px;
+      display: block;
+      float: left;
+    }
+    &:checked {
+      & + label {
+        position: relative;
+        // &:after {
+        //   content: url(../images/template-checked.png);
+        //   width: 22px;
+        //   height: 28px;
+        //   position: absolute;
+        //   left: 60px;
+        //   top: -10px;
+        // }
+        & > img {
+          border: 1px solid $btnBlue;
+        }
+      }
+    }
+  }
+  textarea {
+    &.additional-notes {
+      min-height: 85px;
+    }
+    &.write-to {
+      background: $textarea-bg;
+      min-height: 500px;
+    }
+  }
+}
+.tihlc-details-container {
+  padding: 20px 15px;
+  input.form-control {
+    background: $liteInput;
+    border-color: $liteInput;
+  }
+}
+
+.standard-radio-btn {
+  padding-left: 2rem;
+  input[type='radio'] {
+    position: absolute;
+    left: -9999px;
+    & + label {
+      padding-left: 0;
+      &:before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $disabledBg;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+      }
+    }
+    // &:checked + label:before {
+    //   content: url(../images/template-checked.png);
+    // }
+  }
+}
+
+// input.location-input {
+//     padding-left: 32px;
+//     background-image: url(../images/location.png);
+//     background-position: 10px 10px;
+//     background-repeat: no-repeat;
+// }
+
+.form-anchor {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+}
+.yellow-saperator {
+  background: $yellow-secondary;
+  margin: 1.5em 0 2em;
+  height: 1/16rem;
+}
+
+.subtotal-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $liteYellow;
+  padding: 15px;
+  & > div {
+    p {
+      margin-bottom: 0;
+      line-height: 1.5;
+      color: $black;
+      font-weight: 400;
+    }
+    &.currency-container {
+      font-size: 22px;
+      p {
+        line-height: 1;
+        font-size: 22px;
+      }
+    }
+  }
+}
+.change-currency {
+  text-align: right;
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: $black;
+    line-height: 2;
+  }
+}
+.word-count-sp {
+  font-size: 18px;
+  margin-bottom: 0;
+  span {
+    font-weight: 700;
+  }
+}
+.word-charge-sp {
+  span {
+    font-weight: 700;
+  }
+}
+.next-btn-container {
+  padding: 15px 10px;
+  float: right;
+  text-align: right;
+}
+.next-prev-btn-container {
+  padding: 0 10px;
+  position: relative;
+  .btn-next {
+    position: absolute;
+    right: 0;
+  }
+}

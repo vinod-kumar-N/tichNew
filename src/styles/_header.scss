@@ -1,0 +1,19 @@
+.common-nav-wrap {
+  background: $brown;
+  height: 95px;
+  .nav-logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+.menu-list {
+  li a {
+    font: 600 14px/1.5 $defaultFont;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px 20px;
+    &.signin-btn {
+      border: 2px solid $yellow;
+    }
+  }
+}

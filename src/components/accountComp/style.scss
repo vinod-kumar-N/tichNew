@@ -1,0 +1,21 @@
+.header-clearance {
+  margin-top: 95px;
+}
+.account-comp-wrapper {
+  padding: 20px 0 0;
+}
+.address-type-label {
+  margin: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  span {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 8px;
+  }
+}
+
+.address-card {
+  margin: 8px auto;
+}

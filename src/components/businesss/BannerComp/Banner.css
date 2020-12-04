@@ -1,0 +1,27 @@
+.Banner {
+    background-image: url('../../../images/writing-down-notes.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    min-height: 450px;
+}
+
+.Banner-Heading{
+background-image: linear-gradient(to left, rgba(239,237,194,0), rgba(239,237,194,1));
+width:50%;
+justify-content: center;
+display: flex;
+flex-direction: column;
+padding:10px 40px;
+min-height: 450px;
+}
+
+.Banner .Banner-btn{
+    background-color: #00022e;
+    border-color:#00022e;
+    width:50%;
+    color:#fff;
+    border-radius: 2px;
+    padding:5px 30px;
+    font-size:18px;
+}

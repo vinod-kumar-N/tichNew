@@ -1,0 +1,31 @@
+.account-entry-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(#000000, 0.3);
+}
+
+.account-entry-content {
+  box-shadow:2px 3px 5px #999;
+  background: #ffffff;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: min-content;
+}
+
+.account-entry- {
+  &left {
+    padding: 20px;
+    min-width: 320px;
+  }
+  &right {
+    padding: 20px;
+    min-width: 320px;
+  }
+}

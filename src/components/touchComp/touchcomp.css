@@ -1,0 +1,18 @@
+
+.text-btn{
+    background-color: #27498a;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+.touchBase .btn-color{
+    background-color: #27498a;
+    border-color: #27498a;
+    border-radius: 0rem!important;
+}
+
+.touchBase .AddressMap{
+    width:100%;
+    border:none;
+}

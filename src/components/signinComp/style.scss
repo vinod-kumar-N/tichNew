@@ -1,0 +1,46 @@
+.error-alert-box {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  border-radius: 5px;
+}
+
+.SignIn{
+  padding: 2rem!important;
+  border-left:1px solid #eee;
+  border-top:1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.SignIn-Container{
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 74vh;
+}
+
+.SignIn .login-btn{
+  width: 100%;
+  padding: 10px;
+  background-color: #27498a;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-color: #27498a;
+  border-radius: 3px;
+  outline: none;
+}
+
+.SignIn .RightDesign{
+  width:100%;
+  float: left;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

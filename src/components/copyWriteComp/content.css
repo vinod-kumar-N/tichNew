@@ -1,0 +1,108 @@
+.font-size-12{
+    font-size: 12px;
+}
+.font-size-13{
+    font-size: 13px;
+}
+.font-size-14{
+    font-size: 14px;
+}
+.font-size-15{
+    font-size: 15px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.font-size-17{
+    font-size: 17px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+
+
+.ContentBanner{
+    background-image: url('../../images/writing-down-notes.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+    min-height: 450px; 
+    margin-top:5.5rem;  
+}
+
+.ContentBanner .Banner{
+    background-image: linear-gradient(to left, rgba(27, 27, 25, 0), rgb(68, 68, 63));
+    width:50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding:10px 40px;
+    min-height: 450px; 
+}
+
+.ContentBanner .Banner h1{  
+    color:#fff;
+    font-size:30px;
+}
+
+.ContentBanner .Banner p{  
+    color:#fff;
+    font-size:20px;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.ContentBanner .Banner-btn{
+    width:50%;
+    background-color:#FFBF00;
+    border-color:#FFBF00;
+    border-radius: 3px;
+    padding:10px 20px;
+    font-weight: bold;
+    font-size:20px;
+    color:#000;
+}
+
+.List li{
+    list-style: none;
+  }
+
+  .fa-check:before{
+      color:#27498A;
+  }
+
+  .Privacy{
+      background-color: #f0f0f0;
+      padding:15px 30px;
+  }
+
+  .Privacy .Banner-btn{
+      background-color:#FFBF00;
+      border-color:#FFBF00;
+      border-radius: 3px;
+      padding:5px 8px;
+      font-size:18px;
+      color:#000;
+  }
+
+  .WorkFlow{
+      padding:10px 10px;
+  }
+
+  .Sample{
+      background-color: #f0f0f0;
+      padding:1rem 1.5rem;
+  }
+
+  .Sample .Banner-btn{
+      background-color:#27498A;
+      border-color:#27498A;
+      border-radius: 3px;
+      padding:5px 8px;
+      font-size:18px;
+      color:#fff;
+  }
+  
