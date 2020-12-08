@@ -2,7 +2,7 @@ import { personalActionTypes } from '@Actions/personalActions';
 const initialState = {
     countries: [],
     states: [],
-    personalMessage: {}
+    personalMessage: '1234'
 };
 const PersonalReducer = (state = initialState, action) => {
     switch (action.type) {

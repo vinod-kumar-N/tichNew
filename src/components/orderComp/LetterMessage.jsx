@@ -1,19 +1,22 @@
 import React, { useState, useRef } from "react";
 import templatePlaceHolderImg from "@Images/template-placeholder.png";
 import PersonalService from '@Services/personalService';
+import PersonalActions from '@Actions/personalActions';
 import Dropdown from 'react-dropdown';
-import { useSelector } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import 'react-dropdown/style.css';
 
 const LetterMessage = (props) => {
-  const { CustomerId, personalMessage } = useSelector(
-    ({ AuthReducers }) => AuthReducers.newUserInfo ? AuthReducers.newUserInfo : AuthReducers.userInfo,
-    ({ personalReducers }) => personalReducers.personalMessage
-  );
+  const dispatch = useDispatch();
+  const { CustomerId } = useSelector(
+    ({ AuthReducers }) => AuthReducers.newUserInfo ? AuthReducers.newUserInfo : AuthReducers.userInfo);
   const [personalMessageData, setpersonalMessage] = useState({OccassionId:'', LanguageId:'', HandwritingId:'', DesignTemplateId: '',CustomerID: CustomerId})
   const counterEl = useRef(null)
-  const sendRecipients = async ()=>{
+  const sendRecipients = async () => {
+    const { setPersonalMessage } = PersonalActions;
     let result = await PersonalService.addPersonalMessage(personalMessageData);
+    dispatch(setPersonalMessage(result))
+
   }
   const setOccasion = (e) => {
     setpersonalMessage({
@@ -98,7 +101,7 @@ const LetterMessage = (props) => {
     <form className='tihlc-std-form' ref={counterEl}>
           <div className='form-row'>
             <div className='col-12 title-wrap'>
-              <h3>Style your letter</h3>
+          <h3>Style your letter</h3>
           </div>
         {
           DDList.map((item) => 
@@ -120,7 +123,6 @@ const LetterMessage = (props) => {
               <>
               <input
                     type='radio'
-                    checked
                     name='temp-design'
                     className='form-check-input template-radio form-control'
                     id={`temp${i}`}
